@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         //这是一种SharedPreferences 接口中的一个默认实现，它会使用当前活动的类名作为 SharedPreferences 文件的名称。
-        var sp: SharedPreferences = getPreferences(MODE_PRIVATE)
+        sp = getPreferences(MODE_PRIVATE)
 
         val countReserved = sp.getInt("count_reserved", 0)
 
